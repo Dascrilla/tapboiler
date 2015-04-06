@@ -1,10 +1,20 @@
 <template name= 'dashboard'>
-	
-<div>
-<h1> Check out my Stuff!</h1>
-{{#each stuffs}}
-	<h3>{{title}}</h3>
-	<h4>{{description}}</h4>
-{{/each}}
+<div class="row">
+    <h1 class="pull-left" style="max-width: 50%;">Your Apps</h1>
+    <div class="pull-right">
+        <a class="submit btn btn-block btn-primary" href="#" style="margin-top: 20px">CREATE APP</a>
+    </div>
 </div>
+
+{{#each stuffs}}
+    <div class=" row app-cont">
+        <div class="col-md-8">
+            <h3>{{title}}</h3>
+            <h4>{{description}}</h4>
+        </div>
+        <div class="col-md-4">
+            <img src="img/tapsell_scotch.jpg">
+        </div>
+    </div>
+{{/each}}
 </template>
