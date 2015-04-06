@@ -3,6 +3,9 @@ Template.layout.helpers({
 		if (location.pathname === "/") {
 			return true; 
 		}
+		else if (location.pathname === "/home"){
+			return true
+		}
 		else {
 			return false;
 		}
