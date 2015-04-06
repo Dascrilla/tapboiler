@@ -1,5 +1,5 @@
 <template name="header">
-<div class="navbar navbar-inverse navbar-default">
+<div class="navbar  navbar-default">
 <div class="navbar-inner col-lg-10 col-md-offset-1 col-md-10">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -8,7 +8,9 @@
       <span class="icon-bar"></span>
     </button>
 
-    <a class="navbar-brand" href="{{pathFor 'dashboard'}}"><i class="fa fa-tachometer"></i> StuffApp!</a>
+    <a class="navbar-brand" href="{{pathFor 'dashboard'}}">
+        <img src="img/logo.svg" style="max-width: 108px;">
+    </a>
   </div>
 
   <div class="navbar-collapse collapse">
