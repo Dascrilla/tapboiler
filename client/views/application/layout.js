@@ -1,13 +1,11 @@
 Template.layout.helpers({
-	isLanding: function(){
+	isLanding: function() {
 		if (location.pathname === "/") {
-			return true; 
-		}
-		else if (location.pathname === "/home"){
+			return true;
+		} else if (location.pathname === "/home") {
 			return true
-		}
-		else {
+		} else {
 			return false;
 		}
 	}
-}); 
+});

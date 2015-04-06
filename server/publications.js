@@ -1,5 +1,5 @@
 Meteor.publish('stuffs', function() {
-	return Stuffs.find(); 
+	return Stuffs.find();
 
 });
 
