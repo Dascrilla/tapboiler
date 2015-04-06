@@ -1,0 +1,123 @@
+<template name="landing">
+    <script src="js/modernizr.custom.01771.js"></script>
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="stylesheet" href="/css/theme.css">
+<div class="navbar" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand"><img src="/img/carlove_logo.png" style="width: 50%;min-width: 165px;"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a  href="{{pathFor 'dashboard'}}">Home</a></li>
+               <!-- <li><a class="scrollto" href="#">About</a></li>-->
+                <li><a class="btn fus-btn-white" href="{{pathFor 'entrySignUp'}}">TRY IT</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div><!--/.container -->
+</div>
+
+<!-- Main component for a primary marketing message or call to action -->
+<div id="top" class="jumbotron" style="  height: 700px; border: none;opacity: 0">
+
+    <div style="overflow: hidden" class="fus-bg">
+        <video id="vid" loop="loop" width="auto" height="auto" autoplay="autoplay" poster="/images/video_poster.jpg"  >
+        <source src="vids/carlove-bg.webm" type="video/webm">
+        <source src="vids/carlove-bg.ogv" type="video/ogg">
+       <source src="vids/carlove-bg.mp4" type="video/mp4">
+    </video></div>
+    <div class="fus-overlay"></div>
+    <div class="container">
+        <div class="fus-pitch">
+            <div class="fus-call-to-action">
+                <h1>THE EASIEST WAY <br>TO SERVICE YOUR CAR</h1>
+                <h3 style="color: white">Now Available in Los Angeles!</h3>
+                <form action="https://carlove.createsend.com/t/d/s/jdkrtj/" method="post">
+                    <img style="float:left" src="/images/field_car.png">
+                    <div>
+                        <input style="margin: 0px" type="email" id="fieldEmail" name="cm-jdkrtj-jdkrtj"  placeholder="EMAIL ADDRESS" required>
+                        <input  style="right: 0px" type="submit" value="TRY NOW" class="btn ">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--<img style="z-index: 9999999;position: absolute;bottom:0px;width: 40%;right: 30%;" src="/img/car_hearts.png">-->
+
+</div>
+
+
+    <div class="jumbotron opaque how_it_works" style="height: auto">
+
+        <div class="container">
+            <h1 style="color: #3ca29c; text-align: center">HOW IT WORKS</h1>
+            <div class="row">
+                <div class="col-md-4">
+                   <img src="images/laptop_icon.jpg">
+                    <h2 style="color: #3ca29c; text-align: center">SELECT CAR SERVICE</h2>
+                    <h3>Select a car service ranging from a simple oil change to body repair. Book your location and time and a CarLove driver will meet you.</h3>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/keys_icon.jpg">
+                    <h2 style="color: #3ca29c; text-align: center">WE PICK YOUR CAR UP</h2>
+                    <h3>A CarLove professional driver will meet with you, exchange information, and deliver your car to your auto shop.</h3>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/carsun_icon.jpg">
+                    <h2 style="color: #3ca29c; text-align: center">YOU SAVE MORE TIME</h2>
+                    <h3>Your CarLove driver will wait for your car to be serviced and will return it when it’s finished. Never have to leave the home or office for auto work. </h3>
+                </div>
+            </div>
+            <div class="row" style="text-align: center;">
+                <a href="{{pathFor 'entrySignUp'}}" class="btn" >SIGN UP NOW</a>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="jumbotron footer">
+        <div class="row" style="width:100%">
+            <div class="col-md-4">
+                <div class="col-md-4">
+                    <a href="#"><h4>FAQ's</h4></a>
+                </div>
+                <div class="col-md-4">
+                   <a href="#"> <h4>Terms of Service</h4></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#"><h4>Privacy Policy</h4></a>
+                </div>
+            </div>
+            <div class="col-md-4" style="text-align: center">
+                    <img style="opacity: .8;width: 150px;" src="images/field_car.png">
+            </div>
+            <div class="col-md-4">
+                <div class="col-md-4">
+                    <a href="mailto:info@carlove.co" target="_top"> <h4>info@carlove.co</h4></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="tel:888271-4264" value="+18882714246" ><h4>+1 888-271-4264</h4></a>
+
+                </div>
+                <div class="col-md-4">
+                    <a href="{{pathFor 'entrySignUp'}}"><h4>Sign Up</h4></a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+
+        $('#top').addClass('opaque');
+    </script>
+
+</template>
