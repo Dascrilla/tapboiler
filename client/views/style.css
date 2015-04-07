@@ -4,12 +4,13 @@ h1{
     text-transform: uppercase;
 }
 .app-cont{
-    background: rgb(247, 247, 247);
+    background: rgb(249, 249, 249);
     border: 1px solid rgb(224, 224, 224);
     padding: 20px;
     margin-bottom: 30px;
+    border-radius: 2px;
 }
-.app-cont img {
+.app-cont .app-screenshot {
     width: 130px;
     border: 1px solid rgb(236, 236, 236);
     float: right;
@@ -52,14 +53,14 @@ h1{
 
 .sidebar {
     list-style-type:none;
-    background-color: #529194;
-    width:230px;
-    height:100%;
-    top:0;
-    bottom:0;
-    left:0;
-    text-align:left;
-    position: absolute;
+    background-color: #3E466C;
+    width: 230px;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    position: fixed;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -75,8 +76,9 @@ h1{
 
 .sidebar li {
     text-indent: 20px;
-    line-height: 40px;
-    transition:0.5s ease;
+    line-height: 54px;
+    transition: 0.5s ease;
+    font-size: 18px;
 }
 
 .sidebar li:hover {
@@ -89,4 +91,34 @@ h1{
     height: 65px;
     font-size: 18px;
     line-height: 60px;
+}
+.navbar {
+    border: 1px solid rgb(237, 237, 237);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    min-height: 70px;
+}
+.app-icon {
+    float: none;
+    width: 80px;
+    border-radius: 17px;
+    display: inline-block;
+    border: 1px solid rgb(223, 223, 223);
+}
+.app-title{
+    font-size: 24px;
+    font-weight: 100;
+    display: inline-block;
+    margin-top: 25px;
+    padding-left: 25px;
+    vertical-align: top;
+}
+.btn-create {
+    margin-top: 20px;
+    background: none;
+    color: rgb(42, 169, 175);
+    border: 2px solid rgb(42, 169, 175);
+    box-shadow: none;
+    padding: 10px 27px;
+
 }

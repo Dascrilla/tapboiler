@@ -1,21 +1,22 @@
 <template name= 'dashboard'>
-<div class="row">
+<div class="row" style="  margin-bottom: 10px; margin-top: 21px;">
     <h1 class="pull-left" style="max-width: 50%;">My Apps</h1>
     <div class="pull-right">
-        <a class="submit btn btn-block btn-primary" href="#" style="margin-top: 20px">CREATE APP</a>
+        <a class="submit btn btn-block btn-primary btn-create" href="#" style="margin-top: 20px">CREATE APP</a>
     </div>
 </div>
 
 {{#each stuffs}}
     <div class=" row app-cont">
         <div class="col-md-8">
-            <h3>{{title}}</h3>
-            <h4>{{description}}</h4>
-            <h4>{{status}}</h4>
-            <a class="submit btn btn-block btn-default" style="width: 150px" href="{{last_build}}">BETA TEST</a>
+            <img class="app-icon" src="img/icon.png">
+            <h3 class="app-title">{{title}}</h3>
+            <!--<h4>{{description}}</h4>-->
+            <!--<h4>{{status}}</h4>-->
+            <!--<a class="submit btn btn-block btn-default" style="width: 150px" href="{{last_build}}">BETA TEST</a>-->
         </div>
         <div class="col-md-4">
-            <img src="{{img_url}}">
+            <img class="app-screenshot" src="{{img_url}}">
         </div>
     </div>
 {{/each}}

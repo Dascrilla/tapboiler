@@ -1,6 +1,6 @@
 <template name="header">
-<div class="navbar  navbar-default" style="  z-index: 9999999999;">
-<div class="navbar-inner col-lg-10 col-md-offset-1 col-md-10">
+<div class="navbar  navbar-default" style="z-index: 9999999999;">
+<div class="navbar-inner col-lg-12  col-md-12" style="margin: 0px">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
       <span class="icon-bar"></span>
@@ -9,7 +9,7 @@
     </button>
 
     <a class="navbar-brand" href="{{pathFor 'dashboard'}}">
-        <img src="img/logo.svg" style="max-width: 108px;">
+        <img src="img/logo.svg" style="max-width: 120px;">
     </a>
   </div>
 
@@ -18,12 +18,12 @@
             {{> accountButtons}}
          </ul>
   
-{{#if currentUser}}
-    <ul class="nav navbar-nav">
-    <li> <a href="{{pathFor 'dashboard'}}"><i class="fa fa-globe"></i> Dashboard</a></li> 
+<!--{{#if currentUser}}-->
+    <!--<ul class="nav navbar-nav">-->
+    <!--<li> <a href="{{pathFor 'dashboard'}}"><i class="fa fa-globe"></i> Dashboard</a></li> -->
 
-    </ul>
-{{/if}}
+    <!--</ul>-->
+<!--{{/if}}-->
 
     <!--<form class="navbar-form navbar-left">
       <input type="text" class="form-control col-lg-8" placeholder="Search">
