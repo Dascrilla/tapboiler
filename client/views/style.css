@@ -1,3 +1,6 @@
+body {
+    padding-top: 70px;
+}
 h1{
     font-size: 28px;
     font-weight: 100;
@@ -9,6 +12,14 @@ h1{
     padding: 20px;
     margin-bottom: 30px;
     border-radius: 2px;
+}
+.app-cont.empty{
+    background: rgb(255, 255, 255);
+    border: 1px dashed rgb(210, 210, 210);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 2px;
+    cursor: pointer;
 }
 .app-cont .app-screenshot {
     width: 130px;
@@ -113,12 +124,12 @@ h1{
     padding-left: 25px;
     vertical-align: top;
 }
-.btn-create {
-    margin-top: 20px;
-    background: none;
-    color: rgb(42, 169, 175);
-    border: 2px solid rgb(42, 169, 175);
-    box-shadow: none;
-    padding: 10px 27px;
-
+.create-app {
+    font-size: 16px;
+    text-align: center;
+    color: rgb(160, 210, 211);
+    margin: 0px;
+}
+.empty:hover {
+    background: rgb(249, 249, 249);
 }

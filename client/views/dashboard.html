@@ -1,11 +1,15 @@
 <template name= 'dashboard'>
-<div class="row" style="  margin-bottom: 10px; margin-top: 21px;">
+<div class="row" style=" margin-bottom: 10px; margin-top: 21px;">
     <h1 class="pull-left" style="max-width: 50%;">My Apps</h1>
-    <div class="pull-right">
-        <a class="submit btn btn-block btn-primary btn-create" href="#" style="margin-top: 20px">CREATE APP</a>
-    </div>
-</div>
 
+</div>
+    <a href="#">
+        <div class=" row app-cont empty">
+            <div class="col-md-12">
+                <h3 class="create-app">ADD NEW APP</h3>
+            </div>
+        </div>
+    </a>
 {{#each stuffs}}
     <div class=" row app-cont">
         <div class="col-md-8">
