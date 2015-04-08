@@ -1,5 +1,6 @@
 body {
     padding-top: 70px;
+    background: rgb(249, 249, 249);
 }
 h1{
     font-size: 28px;
@@ -7,7 +8,7 @@ h1{
     text-transform: uppercase;
 }
 .app-cont{
-    background: rgb(249, 249, 249);
+    background: rgb(255, 255, 255);
     border: 1px solid rgb(224, 224, 224);
     padding: 20px;
     margin-bottom: 30px;
@@ -21,10 +22,18 @@ h1{
     border-radius: 2px;
     cursor: pointer;
 }
+.app-cont .number{
+    font-size: 34px;
+    font-weight: 100;
+    color: rgb(60, 96, 136);
+}
+.app-cont .number-label{
+    font-size: 14px;
+    color: rgb(52, 52, 52);
+}
 .app-cont .app-screenshot {
     width: 130px;
     border: 1px solid rgb(236, 236, 236);
-    float: right;
 }
 
 .btn-default {
@@ -89,7 +98,9 @@ h1{
     text-indent: 20px;
     line-height: 54px;
     transition: 0.5s ease;
-    font-size: 18px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 100;
 }
 
 .sidebar li:hover {
@@ -97,7 +108,12 @@ h1{
     cursor:pointer;
     text-indent: 30px;
 }
-
+.sidebar li img {
+    width: 26px;
+    margin: 16px;
+    opacity: 0.5;
+    margin-left: 10px;
+}
 .sidebar > .sidebar-brand {
     height: 65px;
     font-size: 18px;
@@ -132,4 +148,8 @@ h1{
 }
 .empty:hover {
     background: rgb(249, 249, 249);
+}
+#themes .col-md-6{
+    background: grey;
+    height:200px
 }
