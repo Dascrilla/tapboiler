@@ -2,31 +2,9 @@
 <div class="row" style=" margin-bottom: 10px; margin-top: 21px;">
     <h1 class="pull-left" style="max-width: 50%;">Dashboard</h1>
 </div>
-    {{#each stuffs}}
-    <div class=" row app-cont">
-        <div class="col-md-3">
-            <img class="app-screenshot" src="{{img_url}}">
-        </div>
-        <div class="col-md-9">
-            <img class="app-icon" src="img/icon.png">
-            <h3 class="app-title">{{title}}</h3>
-            <!--<h4>{{description}}</h4>-->
+<div id="apps">
 
-            <!--<a class="submit btn btn-block btn-default" style="width: 150px" href="{{last_build}}">BETA TEST</a>-->
-        </div>
-        <div class="col-md-3">
-            <!--<div class="label label-success">{{status}}</div>-->
-        </div>
-        <div class="col-md-3">
-            <h3 class="number">273</h3>
-            <h4 class="number-label">orders</h4>
-        </div>
-        <div class="col-md-3">
-            <h3 class="number">2.6k</h3>
-            <h4 class="number-label">users</h4>
-        </div>
-    </div>
-    {{/each}}
+</div>
     <a href="{{pathFor 'createApp'}}">
         <div class=" row app-cont empty">
             <div class="col-md-12">

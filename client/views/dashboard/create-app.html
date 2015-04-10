@@ -1,8 +1,22 @@
-<template name= 'stats'>
+<template name= 'createApp'>
 <div class="row" style=" margin-bottom: 10px; margin-top: 21px;">
-    <h1 class="pull-left" style="max-width: 50%;">App Stats</h1>
+    <h1 class="pull-left" style="max-width: 50%;">CREATE NEW APP</h1>
 </div>
-    <p>Usage Stats</p>
-    <p>Sales Stats</p>
-    <p>Conversion Stats</p>
+<div class="row">
+    <div class="col-md-5">
+        <form onsubmit="createNew(); return false;" id="dansform" action="dansform" method="POST" class="dansform">
+
+            <div class="form-group">
+                <label>App Name</label>
+                <input id="appTitle" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>App Description</label>
+                <input id="appDesc" class="form-control">
+            </div>
+
+            <button id="submit" type="submit">Create</button>
+        </form>
+    </div>
+</div>
 </template>

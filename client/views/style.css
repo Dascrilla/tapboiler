@@ -13,6 +13,8 @@ h1{
     padding: 20px;
     margin-bottom: 30px;
     border-radius: 2px;
+    transition: 0.5s ease;
+    min-height: 230px;
 }
 .app-cont.empty{
     background: rgb(255, 255, 255);
@@ -21,6 +23,7 @@ h1{
     margin-bottom: 30px;
     border-radius: 2px;
     cursor: pointer;
+    min-height: 0px;
 }
 .app-cont .number{
     font-size: 34px;
@@ -153,3 +156,8 @@ h1{
     background: grey;
     height:200px
 }
+
+.transparent{
+    opacity: 0;
+}
+
